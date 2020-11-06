@@ -55,7 +55,7 @@ app.get('/:id',(req,res)=>{
         try{
         res.status(301).redirect(doc.url);}
         catch(err){
-            res.status(404).send("URL WHICH WAS COVERTED IS MISSING ");
+            res.status(404).send("URL WHICH WAS COVERTED IS MISSING.Not redirected");
         }
     });
 });
